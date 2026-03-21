@@ -743,17 +743,18 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function setLang(lang) {
-  document.querySelectorAll('[data-lang]').forEach(function(el) {
-    if (el.getAttribute('data-lang') === lang) {
-      el.classList.add('active');
+  var els = document.querySelectorAll('[data-lang]');
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    var elLang = el.getAttribute('data-lang');
+    if (elLang === lang) {
+      el.style.display = (el.tagName === 'SPAN' || el.tagName === 'EM') ? 'inline' : 'block';
     } else {
-      el.classList.remove('active');
+      el.style.display = 'none';
     }
-  });
+  }
   var sel = document.getElementById('lang-select');
   if (sel) sel.value = lang;
-  var root = document.getElementById('html-root');
-  if (root) root.setAttribute('lang', lang);
 }
 
 window.addEventListener('load', function() {
