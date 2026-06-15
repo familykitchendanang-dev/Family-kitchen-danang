@@ -44,4 +44,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://familykitchendanang.com/blog-vietnamese-coffee.html"/>
   </url>
 
+  <url>
+    <loc>https://familykitchendanang.com/blog-private-cooking-class-da-nang.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://familykitchendanang.com/blog-private-cooking-class-da-nang.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://familykitchendanang.com/blog-private-cooking-class-da-nang.html"/>
+  </url>
+
 </urlset>
