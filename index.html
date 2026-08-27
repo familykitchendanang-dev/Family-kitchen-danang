@@ -111,6 +111,13 @@
 #faq summary:hover{background:var(--white);}
 #faq .faq-answer{padding:0 1.4rem 1.2rem;color:#555;font-size:0.97rem;line-height:1.8;border-top:1px solid #e8e0d4;}
 #faq .faq-answer p{margin:0;}
+#testimonials{background:var(--cream);}
+#testimonials .t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1000px;margin:0 auto;text-align:left;}
+#testimonials .t-card{background:var(--white);border-radius:12px;padding:22px 24px;box-shadow:4px 4px 0 var(--yellow);display:flex;flex-direction:column;gap:0.6rem;}
+#testimonials .t-stars{color:#F5A623;letter-spacing:2px;font-size:0.95rem;}
+#testimonials .t-quote{color:#444;font-size:0.93rem;line-height:1.7;margin:0;flex-grow:1;}
+#testimonials .t-author{font-weight:800;color:var(--dark);font-size:0.9rem;margin-top:0.2rem;}
+#testimonials .t-date{color:#999;font-size:0.78rem;font-weight:600;}
 </style>
 <script type="application/ld+json">
 {
@@ -191,6 +198,66 @@
           },
           "reviewBody": "Une expérience authentique et chaleureuse. Les recettes étaient délicieuses et l'accueil parfait. À faire absolument à Da Nang !",
           "datePublished": "2026-01-15"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Alexi"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Without a doubt, the best cooking class in Da Nang! Julia and Jérôme welcomed us into their home for a truly authentic and warm home cooking experience. You can immediately feel the professional chef's expertise: the techniques are precise, the ingredients are ultra-fresh, and the flavors are refined. We learned to cook classics like Pho and Banh Xeo, far from the tourist traps. The Franco-Vietnamese duo is delightful and shares a wealth of knowledge about the local culture. If you're looking for an authentic culinary experience in Da Nang, go for it without hesitation. It's much more than a class; it's an unforgettable moment of sharing. Thank you again!",
+          "datePublished": "2026-05"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jade"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "C'était une super expérience avec des locaux dans leur propre maison. Julia et Jérôme sont de super cuisinier et ils connaissent la ville comme leur poche ! La visite du marché était géniale, nous avons beaucoup appris. Je recommande fortement cette activité à tous ceux qui veulent découvrir la cuisine vietnamienne.",
+          "datePublished": "2026-06"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Pierre-Alexis"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Super expérience ! Le cours était à la fois convivial, très bien organisé et riche en découvertes. Il commence par un tour du marché local, à quelques pas, avec des anecdotes sur son histoire, puis nous passons en cuisine. Super ambiance, je recommande à 100 %.",
+          "datePublished": "2026-04"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Augustin"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Une superbe expérience avec Jérôme et Julia ! Nous avons eu la chance de cuisiner et goûter le egg coffee, le Bánh xeo et la soupe phô. C'était délicieux ! L'ambiance est très agréable et bienveillante. La visite du marché est une très bonne idée pour comprendre un peu mieux la culture culinaire vietnamienne ! Je recommande !",
+          "datePublished": "2026-04"
         }
       ],
       "offers": {
@@ -641,6 +708,50 @@
       <div class="gallery-label">Vietnamese Sweets</div>
     </div>
   </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" aria-label="Reviews">
+  <span class="section-label" style="text-align:center;display:block;">Reviews</span>
+  <h2 class="section-title" style="text-align:center;">What Our Guests Say</h2>
+  <p style="text-align:center;color:#666;max-width:600px;margin:0 auto 2.5rem;line-height:1.7;">Real reviews from real guests who cooked with us.</p>
+  <div class="t-grid">
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">Amazing cooking class experience in Da Nang! We learned to make traditional Vietnamese dishes with a wonderful local family. Highly recommended!</p>
+      <div class="t-author">Sarah</div>
+      <div class="t-date">December 2025</div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">Une expérience authentique et chaleureuse. Les recettes étaient délicieuses et l'accueil parfait. À faire absolument à Da Nang !</p>
+      <div class="t-author">Marc</div>
+      <div class="t-date">January 2026</div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">Without a doubt, the best cooking class in Da Nang! Julia and Jérôme welcomed us into their home for a truly authentic and warm home cooking experience. You can immediately feel the professional chef's expertise: the techniques are precise, the ingredients are ultra-fresh, and the flavors are refined. We learned to cook classics like Pho and Banh Xeo, far from the tourist traps. The Franco-Vietnamese duo is delightful and shares a wealth of knowledge about the local culture. If you're looking for an authentic culinary experience in Da Nang, go for it without hesitation. It's much more than a class; it's an unforgettable moment of sharing. Thank you again!</p>
+      <div class="t-author">Alexi</div>
+      <div class="t-date">May 2026</div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">C'était une super expérience avec des locaux dans leur propre maison. Julia et Jérôme sont de super cuisinier et ils connaissent la ville comme leur poche ! La visite du marché était géniale, nous avons beaucoup appris. Je recommande fortement cette activité à tous ceux qui veulent découvrir la cuisine vietnamienne.</p>
+      <div class="t-author">Jade</div>
+      <div class="t-date">June 2026</div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">Super expérience ! Le cours était à la fois convivial, très bien organisé et riche en découvertes. Il commence par un tour du marché local, à quelques pas, avec des anecdotes sur son histoire, puis nous passons en cuisine. Super ambiance, je recommande à 100 %.</p>
+      <div class="t-author">Pierre-Alexis</div>
+      <div class="t-date">April 2026 · Google Local Guide</div>
+    </div>
+    <div class="t-card">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-quote">Une superbe expérience avec Jérôme et Julia ! Nous avons eu la chance de cuisiner et goûter le egg coffee, le Bánh xeo et la soupe phô. C'était délicieux ! L'ambiance est très agréable et bienveillante. La visite du marché est une très bonne idée pour comprendre un peu mieux la culture culinaire vietnamienne ! Je recommande !</p>
+      <div class="t-author">Augustin</div>
+      <div class="t-date">April 2026</div>
     </div>
   </div>
 </section>
