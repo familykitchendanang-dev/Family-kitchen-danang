@@ -101,6 +101,17 @@
   .nav-links{gap:0.8rem;}
   .nav-links a{font-size:0.78rem;}
 }
+#faq{background:var(--white);}
+#faq .faq-inner{max-width:800px;margin:0 auto;text-align:left;}
+#faq details{background:var(--cream);border:2px solid var(--dark);border-radius:12px;margin-bottom:0.8rem;box-shadow:3px 3px 0 var(--dark);overflow:hidden;}
+#faq details[open]{box-shadow:4px 4px 0 var(--yellow);}
+#faq summary{padding:1.1rem 1.4rem;font-weight:700;font-size:1rem;color:var(--dark);cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:1rem;user-select:none;}
+#faq summary::-webkit-details-marker{display:none;}
+#faq summary::after{content:'+';font-size:1.4rem;font-weight:300;color:var(--red);flex-shrink:0;line-height:1;}
+#faq details[open] summary::after{content:'−';}
+#faq summary:hover{background:var(--white);}
+#faq .faq-answer{padding:0 1.4rem 1.2rem;color:#555;font-size:0.97rem;line-height:1.8;border-top:1px solid #e8e0d4;}
+#faq .faq-answer p{margin:0;}
 </style>
 <script type="application/ld+json">
 {
@@ -253,42 +264,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is included in the cooking class?",
+          "name": "Qu'est-ce qui est inclus dans le cours de cuisine ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The class includes a market visit, cooking 6 traditional Vietnamese dishes with Jérôme and Julia, a recipes booklet. Classes run from 9:30am to 12:30pm or 2pm to 5pm."
+            "text": "Le cours comprend une visite du marché, la préparation de 6 plats traditionnels vietnamiens avec Jérôme et Julia, et un livret de recettes. Les cours ont lieu de 9h30 à 12h30 ou de 14h à 17h."
           }
         },
         {
           "@type": "Question",
-          "name": "How much does the cooking class cost?",
+          "name": "Combien coûte le cours de cuisine ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The cooking class costs $35 USD per person for groups of 1 to 8 people."
+            "text": "Le cours de cuisine coûte 35 $ USD par personne, pour des groupes de 1 à 8 personnes."
           }
         },
         {
           "@type": "Question",
-          "name": "What languages do you speak?",
+          "name": "Quelles langues parlez-vous ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! Our team speaks English, French, German and Korean fluently, so guests from many countries feel right at home."
+            "text": "Notre équipe parle couramment anglais, français, allemand et coréen, pour que nos invités du monde entier se sentent comme chez eux."
           }
         },
         {
           "@type": "Question",
-          "name": "Where is Family Kitchen Da Nang located?",
+          "name": "Où se trouve Family Kitchen Da Nang ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Family Kitchen Da Nang is located in Da Nang, Vietnam. The exact address is provided upon booking confirmation."
+            "text": "Family Kitchen Da Nang se trouve à Da Nang, au Vietnam. L'adresse exacte est communiquée lors de la confirmation de réservation."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I book a cooking class?",
+          "name": "Comment réserver un cours de cuisine ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can book via the contact form on our website, by emailing familykitchendanang@gmail.com, or by WhatsApp at +84947895066."
+            "text": "Vous pouvez réserver via le formulaire de contact de notre site, par email à familykitchendanang@gmail.com, ou par WhatsApp au +84 947 895 066."
           }
         },
         {
@@ -348,6 +359,7 @@
   <ul class="nav-links">
     <li><a href="#about" id="nav-about"><span>À Propos</span></a></li>
     <li><a href="#gallery"><span>Galerie</span></a></li>
+    <li><a href="/faq.html"><span>FAQ</span></a></li>
     <li><a href="#contact" style="font-weight:800;color:#1a1008;background:var(--yellow);border:2px solid var(--yellow);padding:5px 12px;border-radius:20px;font-size:0.82rem;white-space:nowrap;">Réserver</a></li>
     <li>
       <div style="position:relative;display:inline-block;">
@@ -616,6 +628,51 @@
     </div>
   </div>
     </div>
+  </div>
+</section>
+
+<section id="faq" aria-label="Questions fréquentes sur notre cours de cuisine vietnamienne">
+  <span class="section-label" style="text-align:center;display:block;">FAQ</span>
+  <h2 class="section-title" style="text-align:center;">Questions Fréquentes</h2>
+  <p style="text-align:center;color:#666;max-width:600px;margin:0 auto 2.5rem;line-height:1.7;">Tout ce qu'il faut savoir sur notre cours de cuisine vietnamienne à Da Nang.</p>
+  <div class="faq-inner">
+
+    <details open>
+      <summary>Qu'est-ce qui est inclus dans le cours de cuisine ?</summary>
+      <div class="faq-answer"><p>Le cours comprend une visite du marché, la préparation de 6 plats traditionnels vietnamiens avec Jérôme et Julia, et un livret de recettes. Les cours ont lieu de 9h30 à 12h30 ou de 14h à 17h.</p></div>
+    </details>
+
+    <details>
+      <summary>Combien coûte le cours de cuisine ?</summary>
+      <div class="faq-answer"><p>Le cours de cuisine coûte 35 $ USD par personne, pour des groupes de 1 à 8 personnes.</p></div>
+    </details>
+
+    <details>
+      <summary>Quelles langues parlez-vous ?</summary>
+      <div class="faq-answer"><p>Notre équipe parle couramment anglais, français, allemand et coréen, pour que nos invités du monde entier se sentent comme chez eux.</p></div>
+    </details>
+
+    <details>
+      <summary>Où se trouve Family Kitchen Da Nang ?</summary>
+      <div class="faq-answer"><p>Family Kitchen Da Nang se trouve à Da Nang, au Vietnam. L'adresse exacte est communiquée lors de la confirmation de réservation.</p></div>
+    </details>
+
+    <details>
+      <summary>Comment réserver un cours de cuisine ?</summary>
+      <div class="faq-answer"><p>Vous pouvez réserver via le formulaire de contact de notre site, par email à familykitchendanang@gmail.com, ou par WhatsApp au +84 947 895 066.</p></div>
+    </details>
+
+    <details>
+      <summary>Proposez-vous des cours de cuisine privés à Da Nang ?</summary>
+      <div class="faq-answer"><p>Oui ! Family Kitchen Da Nang accueille des groupes privés. En couple, en famille ou entre amis, vous pouvez réserver un cours de cuisine privé à Da Nang pour jusqu'à 8 personnes. Contactez-nous par WhatsApp ou par email pour organiser votre session privée.</p></div>
+    </details>
+
+    <details>
+      <summary>Qu'est-ce qui fait de ce cours de cuisine une expérience locale authentique à Da Nang ?</summary>
+      <div class="faq-answer"><p>Contrairement aux écoles de cuisine touristiques, Family Kitchen Da Nang est un véritable cours de cuisine local. Vous cuisinez chez nous, faites vos courses au marché du quartier, et apprenez des recettes transmises en famille. Un cours de cuisine vietnamienne à Da Nang que les locaux recommandent.</p></div>
+    </details>
+
+    <p style="text-align:center;margin-top:1.5rem;"><a href="/faq.html" style="color:var(--red);font-weight:700;text-decoration:none;">Voir toute la FAQ →</a></p>
   </div>
 </section>
 
