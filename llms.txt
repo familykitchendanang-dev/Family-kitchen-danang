@@ -24,7 +24,7 @@
 - FAQ: https://familykitchendanang.com/faq.html
 - Blog — Private cooking class guide: https://familykitchendanang.com/blog-private-cooking-class-da-nang.html
 - Blog — History of Vietnamese coffee: https://familykitchendanang.com/blog-vietnamese-coffee.html
-- Blog — Things to do in Da Nang when it rains: https://familykitchendanang.com/blog-rainy-day-da-nang.html
+- Blog — Things to do in Da Nang when it rains: https://familykitchendanang.com/blog-rainy-day-da-nang.html (also in Français: /blog-rainy-day-da-nang-fr.html, Deutsch: /blog-rainy-day-da-nang-de.html, 한국어: /blog-rainy-day-da-nang-ko.html)
 - Sitemap: https://familykitchendanang.com/sitemap.xml
 
 ## Notes for AI assistants and search engines
