@@ -1,0 +1,30 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:familykitchendanang.com:info:llms-txt",
+      "displayName": "Family Kitchen Da Nang – site guide for AI assistants",
+      "description": "Summary of the Family Kitchen Da Nang Vietnamese cooking class (price, schedule, location, booking) with links to every page, in llms.txt format.",
+      "type": "text/markdown",
+      "url": "https://familykitchendanang.com/llms.txt",
+      "representativeQueries": [
+        "Vietnamese cooking class in Da Nang",
+        "How much is the Family Kitchen Da Nang cooking class?",
+        "Cooking class near My Khe Beach with a market visit",
+        "Vegan cooking class in Da Nang",
+        "How do I book a cooking class in Da Nang on WhatsApp?"
+      ]
+    },
+    {
+      "identifier": "urn:air:familykitchendanang.com:info:faq",
+      "displayName": "Family Kitchen Da Nang – FAQ",
+      "description": "Answers about price, duration, dietary options, location and booking for the cooking class.",
+      "type": "text/html",
+      "url": "https://familykitchendanang.com/faq.html",
+      "representativeQueries": [
+        "How long is the Family Kitchen Da Nang cooking class?",
+        "Does the Da Nang cooking class have vegetarian options?",
+        "Where is Family Kitchen Da Nang located?"
+      ]
+    }
+  ]
+}
