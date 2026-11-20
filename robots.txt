@@ -40,7 +40,6 @@ Allow: /
 
 # Sitemap and AI content summary
 Sitemap: https://familykitchendanang.com/sitemap.xml
-Agentmap: https://familykitchendanang.com/.well-known/ard.json
 
 # Block access to any temp or admin files
 Disallow: /admin/
