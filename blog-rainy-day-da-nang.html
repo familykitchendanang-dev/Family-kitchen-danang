@@ -27,6 +27,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }, true);
 </script>
 <!-- End Google Ads tag -->
+<!-- Prefill WhatsApp message for visitors coming from Google Ads / utm_source=google -->
+<script>
+(function () {
+  var fromGoogle = false;
+  try {
+    var p = new URLSearchParams(location.search);
+    fromGoogle = p.has('gclid') || p.has('gbraid') || p.has('wbraid') || (p.get('utm_source') || '').toLowerCase() === 'google';
+    if (fromGoogle) sessionStorage.setItem('fk_from_google', '1');
+    else fromGoogle = sessionStorage.getItem('fk_from_google') === '1';
+  } catch (e) {}
+  if (!fromGoogle) return;
+  var text = encodeURIComponent("Hi! I found you on Google. I'd like to book a cooking class.");
+  function prefill() {
+    var links = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = links[i].href.split('?')[0] + '?text=' + text;
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', prefill);
+  else prefill();
+})();
+</script>
+<!-- End WhatsApp prefill -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
